@@ -1,4 +1,4 @@
-/// <reference types="cypress" />
+/// <reference types="cypress"/>
 
 // This is describe test block that holds group of tests
 describe("My First Tests", () => {
