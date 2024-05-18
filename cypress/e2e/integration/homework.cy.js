@@ -132,7 +132,7 @@ describe("Homework", () => {
     });
   });
 
-  it.only("random", () => {
+  it("random", () => {
     cy.visit("https://www.techglobal-training.com/frontend/project-1");
 
     cy.get('[for="name"]').then(($el) => {
@@ -147,4 +147,54 @@ describe("Homework", () => {
       cy.log(attr + " Is the value of class attribute");
     });
   });
-});
+
+  // it.only("practice", () => {
+  //   cy.get("#locator").then(($el) => {
+  //     cy.visit("https://www.techglobal-training.com/frontend");
+
+  //     cy.get("#locator").then(($el) => {
+  //       $el.text();
+  //       cy.wrap($el).then(($el2) => {
+  //         $el2.text();
+  //       });
+  //     });
+
+  //     cy.get("#locator").then(($el) => {
+
+  //       cy.wrap($el.text()).should("eq", "expectedText");
+
+  //       cy.title().should("eq", "expectedText");
+  //     });
+
+  //     let myName = 'TG'
+
+  //     cy.wrap(myName).should('eq', 'TG')
+
+  //     cy.wrap(myName).then((el) => {
+  //       myName.trim()
+  //       cy.wrwap(myName.trim())
+  //     })
+
+  //     let num = 2
+
+  //     cy.wrap(num).should('eq', 2)
+
+
+  //     cy.title()
+  //     cy.url()
+
+
+  //     // 1st Usage
+  //     cy.get("#locator").invoke('').then((el) => {
+
+  //     })
+
+  //     // 2nd Usage
+  //     cy.get("#locator").then(($el) => {
+  //       const text = $el.text()
+  //       const length = $el.length
+  //       const attr = $el.attr('id')
+  //     })
+
+  //   });
+  });
