@@ -2,7 +2,6 @@
 
 describe("File Download & File Upload", () => {
   beforeEach(() => {
-    cy.visit("https://www.techglobal-training.com/frontend/");
     cy.clickCard("File Download & Upload");
   });
 
