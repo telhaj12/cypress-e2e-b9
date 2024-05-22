@@ -39,7 +39,6 @@ describe("Debugging", () => {
 
     cy.get('#username').type(Cypress.env('UI_USERNAME'))
 
-
     cy.get('#password').type(Cypress.env('UI_PASSWORD'))
 
     cy.get('#login_btn').click()
@@ -49,6 +48,7 @@ describe("Debugging", () => {
     cy.get('#dropdown-button').realHover()
 
     cy.debug()
+
   });
 
 
