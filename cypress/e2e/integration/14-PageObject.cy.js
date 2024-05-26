@@ -3,7 +3,7 @@ import LoginPage from '../../pages/LoginPage'
 
 const loginPage = new LoginPage()
 
-describe("Login page test", () => {
+describe("Login page test", { tags: ['@regression'] }, () => {
   beforeEach(() => {
     cy.clickCard("Project - Login Function");
   });
@@ -18,7 +18,7 @@ describe("Login page test", () => {
   //   cy.get("#success_lgn").should("be.visible");
   // });
 
-  it("Login with POM - Positive", () => {
+  it("Login with POM - Positive", { tags: ['@smoke'] },() => {
     loginPage.userLogin(Cypress.env("UI_USERNAME"), Cypress.env("UI_PASSWORD"))
     loginPage.getSuccessMessage().should('be.visible')
   });
